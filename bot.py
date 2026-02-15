@@ -35,7 +35,7 @@ def check_subscription(idkey):
 def generate_ai(iduser,text,page):
     headers = {
     'accept': 'audio/mpeg',
-    'xi-api-key': 'f343277da36e000924585730b1a3f91e', #elevenlabs (text-to-speech) API key here
+    'xi-api-key': 'sk_14ddd4defd7f13eca3854b4509b0541ecc7bd034e911d793', #elevenlabs (text-to-speech) API key here
     'Content-Type': 'application/json',
     }
 
@@ -299,4 +299,5 @@ def add_subs(pm):
 
 
 bot.polling()
+
 
