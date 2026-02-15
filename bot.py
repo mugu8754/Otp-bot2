@@ -46,7 +46,7 @@ def generate_ai(iduser,text,page):
         'similarity_boost': 1,
     },
     }
-    botai = requests.post('https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM', headers=headers, json=json_data)
+    botai = requests.post('https://api.elevenlabs.io/v1/text-to-speech/J5DQLSCZaWrvT9yRCZNJ', headers=headers, json=json_data)
     open(f"./conf/{iduser}/{page}.mp3",   'wb').write(botai.content)
 
 
@@ -299,5 +299,6 @@ def add_subs(pm):
 
 
 bot.polling()
+
 
 
